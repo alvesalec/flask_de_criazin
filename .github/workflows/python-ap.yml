@@ -44,5 +44,5 @@ jobs:
       run: |
            echo "Conectando no EC2"
            echo "${{secrets.AWS_KEY_VENV}}" > private_key && chmod 600 private key
-           ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-44-194-51-199.compute-1.amazonaws.com"
+           ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-44-194-51-199.compute-1.amazonaws.com "
                   cd flask_de_criazin/;git pull;./executar.sh"
